@@ -1,0 +1,71 @@
+header {
+  height: 16em;
+  background-color: red;
+
+  .baymax.head {
+    width: 70%;
+    height: 60%;
+    margin: 0 10%;
+    padding: 0 5%;
+
+    background-color: white;
+
+    display: flex;
+
+    .eye {
+      background-color: black;
+      align-self: center;
+
+      width: 6em;
+      height: 6em;
+
+      shape-outside: circle( 50% );
+      clip-path: circle( 50% );
+
+      .eye-lid {
+        height: 100%;
+      }
+    }
+
+    .eye-connect {
+      height: 0.5em;
+
+      background-color: black;
+
+      flex-grow: 1;
+      align-self: center;
+    }
+  }
+
+  .baymax.head.sad {
+    .eye-lid.left {
+      background-image: linear-gradient(160deg, white 50%, transparent 50%);
+    }
+
+    .eye-lid.right {
+      background-image: linear-gradient(200deg, white 50%, transparent 50%);
+    }
+  }
+
+  .baymax.head.happy {
+    .eye-lid {
+      background-image: linear-gradient(180deg, white 46%, transparent 0%), linear-gradient(0deg, white 46%, transparent 0%);
+    }
+  }
+
+  .baymax.chip {
+    height: 40%;
+    background-color: white;
+
+    .holder {
+      background-color: black;
+      align-self: center;
+
+      width: 6em;
+      height: 6em;
+
+      shape-outside: circle( 50% );
+      clip-path: circle( 50% );
+    }
+  }
+}
